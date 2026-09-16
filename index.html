@@ -174,13 +174,6 @@
       </div>
       <div class="grid md:grid-cols-2 gap-6 mt-10" id="bonus-grid"></div>
 
-      <!-- DEPOIMENTOS -->
-      <div class="text-center mt-16">
-        <h3 class="text-graphite font-extrabold text-3xl md:text-5xl">VEJA O QUE AS CLIENTES ESTÃO DIZENDO</h3>
-        <div class="w-[13%] mx-auto h-1 bg-rose rounded-full my-6"></div>
-        <p class="text-graphite/70 text-base md:text-lg max-w-2xl mx-auto">Quem consulta a informação certa produz com mais segurança e desperdiça menos.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 gap-6 mt-8" id="testimonials-grid"></div>
     </div>
   </section>
 
@@ -446,21 +439,6 @@
           '<div class="mt-4 inline-block bg-rose text-white text-xs font-bold px-3 py-1.5 rounded-full">INCLUSO NO PACOTE PREMIUM</div>'+
         '</div></div>';
     }).join('');
-  })();
-
-  // ---- Depoimentos (placeholders reais) ----
-  (function(){
-    var grid = document.getElementById('testimonials-grid');
-    var html = '';
-    for (var i=1;i<=4;i++){
-      html += '<div class="bg-blush rounded-[15px] overflow-hidden p-3">'+
-        '<div class="w-full aspect-[7/10] rounded-[10px] flex items-center justify-center text-center bg-white border-2 border-dashed border-graphite/20 text-graphite p-4">'+
-        '<div class="max-w-[90%]">'+picIcon+
-        '<p class="font-bold text-sm mt-2">DEPOIMENTO REAL '+i+'</p>'+
-        '<p class="text-xs mt-1 text-graphite/70 leading-snug">Inserir print/foto de depoimento real de cliente (a ser enviado). Não usar nomes, fotos ou resultados inventados.</p>'+
-        '<p class="text-[10px] mt-2 text-graphite/45">Proporção 700×1000</p></div></div></div>';
-    }
-    grid.innerHTML = html;
   })();
 
   // ---- Lista Pacote Básico ----
