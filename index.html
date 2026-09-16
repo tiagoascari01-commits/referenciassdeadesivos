@@ -15,12 +15,18 @@
     theme: {
       extend: {
         colors: {
-          graphite: '#2C2A2E',
-          'graphite-soft': '#46424a',
-          offwhite: '#FDFBF9',
-          cream2: '#FBF2EB',
-          blush: '#FCE8E3',
-          rose: '#E85D75',
+          navy: '#062B4A',
+          'navy-dark': '#031C31',
+          'navy-soft': '#0C3E63',
+          teal: '#087B78',
+          'teal-light': '#159A91',
+          cream: '#F7F3EA',
+          cream2: '#EFE8DC',
+          gold: '#D2A23A',
+          ink: '#172333',
+          green: '#25B967',
+          'green-hover': '#169552',
+          softred: '#D94C4C',
         },
         fontFamily: {
           sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -43,38 +49,39 @@
 <body class="font-sans">
 <main>
 
-  <!-- ===== TOP BAR (barra honesta, sem urgência falsa) ===== -->
-  <section class="bg-[#EE6352] px-2 md:px-4 text-center" style="padding-top:9px;padding-bottom:9px;">
-    <h2 class="text-white font-medium text-[11px] md:text-xs whitespace-nowrap tracking-wide">📌 GUIA VISUAL COMPLETO • ACESSO IMEDIATO E VITALÍCIO</h2>
+  <!-- ===== TOP BAR ===== -->
+  <section class="bg-navy px-2 md:px-4 text-center" style="padding-top:9px;padding-bottom:9px;">
+    <h2 class="text-cream font-medium text-[11px] md:text-xs whitespace-nowrap tracking-wide">✦ GUIA VISUAL COMPLETO • ACESSO IMEDIATO E VITALÍCIO</h2>
   </section>
 
   <!-- ===== SEÇÃO 1 — HERO ===== -->
-  <section class="bg-offwhite py-4 px-4 md:px-6 text-center">
+  <section class="bg-cream py-4 px-4 md:px-6 text-center">
     <div class="max-w-4xl mx-auto">
-      <span class="inline-block bg-[#EE6352] text-white font-bold rounded-full uppercase tracking-wide" style="font-size:12px;padding:4px 14px;">Guia Visual Completo para Quem Produz Adesivos</span>
-      <h1 class="mt-3 text-graphite font-bold leading-tight tracking-tight text-[22px] md:text-[32px] text-center">+100 Fichas para Produzir Adesivos Sem Erro</h1>
-      <p class="mt-3 text-graphite/75 font-medium text-[14px] md:text-lg max-w-2xl mx-auto leading-relaxed">Descubra quais materiais usar e como imprimir, cortar, aplicar e finalizar seus adesivos com aparência profissional — sem desperdiçar papel, vinil e tinta com testes que não funcionam.</p>
+      <span class="inline-block bg-teal text-white font-bold rounded-full uppercase tracking-wide" style="font-size:12px;padding:4px 14px;">Guia Visual Completo para Quem Produz Adesivos</span>
+      <h1 class="mt-3 text-navy font-bold leading-tight tracking-tight text-[22px] md:text-[32px] text-center">+100 Fichas para Produzir Adesivos Sem Erro</h1>
+      <p class="mt-3 text-ink/75 font-medium text-[14px] md:text-lg max-w-2xl mx-auto leading-relaxed">Descubra quais materiais usar e como imprimir, cortar, aplicar e finalizar seus adesivos com aparência profissional — sem desperdiçar papel, vinil e tinta com testes que não funcionam.</p>
 
       <!-- IMAGEM: Mockup principal do produto -->
-      <a href="https://ibb.co/VcjqRcFT" target="_blank" rel="noopener noreferrer" class="block relative left-1/2 -translate-x-1/2 my-4 w-full md:w-[92%] max-w-none">
-        <img src="https://i.ibb.co/S4s3b4kB/mck.png" alt="mockup do produto" class="w-full h-auto rounded-[12px] shadow-[0_20px_50px_rgba(44,42,46,0.12)]" />
-      </a>
+      <div class="block relative left-1/2 -translate-x-1/2 my-4 w-full md:w-[92%] max-w-none">
+        <img src="https://referenciassdeadesivos.vercel.app/assets/images/mck.webp" alt="mockup do produto" class="w-full h-auto rounded-[12px] shadow-[0_20px_50px_rgba(6,43,74,0.18)]">
+      </div>
 
-      <p class="text-graphite/70 text-[13px] md:text-lg max-w-2xl mx-auto leading-relaxed font-medium">Tenha sempre à mão orientações práticas sobre papéis adesivos, vinis, impressão, corte, laminação, aplicação, acabamento e correção dos erros mais comuns.</p>
+      <p class="text-ink/70 text-[13px] md:text-lg max-w-2xl mx-auto leading-relaxed font-medium">Tenha sempre à mão orientações práticas sobre papéis adesivos, vinis, impressão, corte, laminação, aplicação, acabamento e correção dos erros mais comuns.</p>
 
       <ul class="mt-4 space-y-2 max-w-md mx-auto text-left" id="hero-benefits"></ul>
 
       <div class="mt-5">
-        <a href="#oferta" class="inline-block bg-[#39B574] hover:bg-[#2fa066] transition-colors text-white font-semibold px-5 py-4 shadow-lg shadow-[#39B574]/30 text-[13px] md:text-base rounded-[3px] max-w-xs animate-breathe">QUERO PRODUZIR ADESIVOS SEM ERRO</a>
+        <a href="#oferta" class="inline-block bg-green hover:bg-green-hover transition-colors text-white font-bold px-6 py-4 shadow-lg shadow-green/40 text-[13px] md:text-base rounded-lg max-w-xs animate-breathe">QUERO PRODUZIR ADESIVOS SEM ERRO</a>
       </div>
-      <p class="mt-3 text-graphite/70 text-sm font-medium">Acesso imediato após a confirmação do pagamento.</p>
+      <p class="mt-3 text-ink/60 text-sm font-medium">Acesso imediato após a confirmação do pagamento.</p>
     </div>
   </section>
 
   <!-- ===== SEÇÃO 2 — PRÉVIA DAS FICHAS (carrossel) ===== -->
-  <section class="bg-graphite py-12 md:py-20 px-4">
-    <h2 class="text-center text-white font-extrabold text-3xl md:text-6xl max-w-4xl mx-auto leading-tight">VEJA POR DENTRO ALGUMAS DAS FICHAS QUE VOCÊ VAI RECEBER</h2>
+  <section class="bg-navy py-12 md:py-20 px-4">
+    <h2 class="text-center text-white font-extrabold text-3xl md:text-6xl max-w-4xl mx-auto leading-tight">VEJA POR DENTRO ALGUMAS DAS <span class="text-teal-light">FICHAS</span> QUE VOCÊ VAI RECEBER</h2>
     <p class="text-center text-white/75 text-base md:text-xl mt-4 max-w-2xl mx-auto">Informações visuais, organizadas e fáceis de consultar durante a sua produção.</p>
+    <div class="mx-auto mt-5 h-1 w-16 rounded-full bg-gold"></div>
     <div class="mt-10">
       <div class="w-full max-w-6xl mx-auto">
         <div class="relative overflow-hidden rounded-[10px]" style="min-height:265px;">
@@ -86,99 +93,94 @@
 
   <!-- ===== SEÇÃO 3 — IDENTIFICAÇÃO DO PROBLEMA ===== -->
   <section class="bg-cream2 py-12 md:py-20 px-4">
-    <div class="max-w-5xl mx-auto bg-blush rounded-[30px] p-6 md:p-10">
-      <h2 class="text-graphite font-extrabold text-xl md:text-3xl leading-snug text-center uppercase max-w-3xl mx-auto">SE VOCÊ JÁ PERDEU MATERIAL TENTANDO ACERTAR UM ADESIVO, ESTAS FICHAS FORAM FEITAS PARA VOCÊ</h2>
-      <p class="text-graphite/75 text-base md:text-lg mt-6 max-w-2xl mx-auto text-center">Produzir adesivos parece simples, mas uma escolha errada de papel, vinil, tinta, configuração ou acabamento pode comprometer toda a produção.</p>
-      <p class="text-graphite/75 text-base md:text-lg mt-3 max-w-2xl mx-auto text-center">Com as fichas, você consulta rapidamente o que precisa fazer em cada etapa, sem depender de tentativas aleatórias.</p>
+    <div class="max-w-5xl mx-auto bg-white rounded-[30px] p-6 md:p-10 border border-gold/25 shadow-[0_20px_50px_rgba(6,43,74,0.08)]">
+      <h2 class="text-navy font-extrabold text-xl md:text-3xl leading-snug text-center uppercase max-w-3xl mx-auto">SE VOCÊ JÁ PERDEU MATERIAL TENTANDO ACERTAR UM ADESIVO, ESTAS FICHAS FORAM FEITAS PARA VOCÊ</h2>
+      <p class="text-ink/75 text-base md:text-lg mt-6 max-w-2xl mx-auto text-center">Produzir adesivos parece simples, mas uma escolha errada de papel, vinil, tinta, configuração ou acabamento pode comprometer toda a produção.</p>
+      <p class="text-ink/75 text-base md:text-lg mt-3 max-w-2xl mx-auto text-center">Com as fichas, você consulta rapidamente o que precisa fazer em cada etapa, sem depender de tentativas aleatórias.</p>
       <ul class="mt-8 space-y-4 max-w-2xl mx-auto" id="problem-list"></ul>
       <div class="text-center mt-8">
-        <a href="#oferta" class="inline-block bg-[#39B574] hover:bg-[#2fa066] transition-colors text-white font-semibold rounded-[3px] px-8 py-4 text-lg md:text-xl shadow-lg shadow-[#39B574]/30 animate-breathe">QUERO EVITAR ESSES ERROS</a>
+        <a href="#oferta" class="inline-block bg-green hover:bg-green-hover transition-colors text-white font-bold rounded-lg px-8 py-4 text-lg md:text-xl shadow-lg shadow-green/40 animate-breathe">QUERO EVITAR ESSES ERROS</a>
       </div>
     </div>
   </section>
 
   <!-- ===== SEÇÃO 4 — ANTES E DEPOIS ===== -->
-  <section class="bg-offwhite py-12 md:py-20 px-4">
-    <h2 class="text-center text-graphite font-extrabold text-2xl md:text-4xl max-w-3xl mx-auto leading-snug">VEJA A DIFERENÇA ENTRE PRODUZIR NO ACHISMO E <span class="text-rose">SEGUIR A ORIENTAÇÃO CORRETA</span></h2>
+  <section class="bg-cream py-12 md:py-20 px-4">
+    <h2 class="text-center text-navy font-extrabold text-2xl md:text-4xl max-w-3xl mx-auto leading-snug">VEJA A DIFERENÇA ENTRE PRODUZIR NO ACHISMO E <span class="text-teal">SEGUIR A ORIENTAÇÃO CORRETA</span></h2>
     <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-10">
       <div>
-        <div class="rounded-[16px] overflow-hidden shadow-lg">
-          <div class="bg-[#D32B2B] text-center py-3 px-4">
+        <div class="rounded-[16px] overflow-hidden shadow-lg border border-cream2">
+          <div class="bg-softred text-center py-3 px-4">
             <p class="text-white font-extrabold text-2xl md:text-3xl leading-none">ANTES</p>
             <p class="text-white font-semibold text-sm md:text-base mt-1">das Fichas</p>
           </div>
-          <a href="https://ibb.co/9mddn4Bs" target="_blank" rel="noopener noreferrer" class="block w-full">
-            <img src="https://i.ibb.co/0pzzq91h/5310db7c-0c13-4479-ba5f-e4257af11ce9.png" alt="antes das fichas" class="w-full h-auto block" />
-          </a>
+          <div class="block w-full">
+            <img src="https://referenciassdeadesivos.vercel.app/assets/images/antes.webp" alt="antes das fichas" class="w-full h-auto block">
+          </div>
         </div>
         <ul class="mt-5" id="antes-list"></ul>
       </div>
       <div>
-        <div class="rounded-[16px] overflow-hidden shadow-lg">
-          <div class="bg-[#1E8E29] text-center py-3 px-4">
+        <div class="rounded-[16px] overflow-hidden shadow-lg border border-cream2">
+          <div class="bg-green text-center py-3 px-4">
             <p class="text-white font-extrabold text-2xl md:text-3xl leading-none">DEPOIS</p>
             <p class="text-white font-semibold text-sm md:text-base mt-1">das Fichas</p>
           </div>
-          <a href="https://ibb.co/YFnM2q7R" target="_blank" rel="noopener noreferrer" class="block w-full">
-            <img src="https://i.ibb.co/Mxw4n3D2/e122db1b-1e41-4704-be9c-58a2877d0217.png" alt="depois das fichas" class="w-full h-auto block" />
-          </a>
+          <div class="block w-full">
+            <img src="https://referenciassdeadesivos.vercel.app/assets/images/depois.webp" alt="depois das fichas" class="w-full h-auto block">
+          </div>
         </div>
         <ul class="mt-5" id="depois-list"></ul>
       </div>
     </div>
-    <p class="text-center text-graphite font-semibold text-lg md:text-2xl max-w-3xl mx-auto mt-10">Menos tentativa e erro. Mais qualidade em cada adesivo produzido.</p>
+    <p class="text-center text-navy font-semibold text-lg md:text-2xl max-w-3xl mx-auto mt-10">Menos tentativa e erro. Mais qualidade em cada adesivo produzido.</p>
   </section>
 
-  <!-- ===== SEÇÃO 5 — URGÊNCIA (sem contador falso) ===== -->
-  <!--
-    NOTA: O contador regressivo do template original foi REMOVIDO para não criar urgência
-    falsa nem reiniciar automaticamente a cada visitante. Se houver uma promoção com prazo
-    real e configurado, um contador honesto pode ser reinserido aqui (mesma posição/estilo).
-  -->
-  <section class="bg-graphite py-14 px-4 text-center">
+  <!-- ===== SEÇÃO 5 — URGÊNCIA ===== -->
+  <section class="bg-navy py-14 px-4 text-center">
     <h2 class="text-white font-extrabold text-3xl md:text-5xl max-w-4xl mx-auto leading-tight">QUANTO MATERIAL VOCÊ AINDA VAI PERDER TESTANDO NO ESCURO?</h2>
     <p class="text-white/80 text-base md:text-lg mt-5 max-w-2xl mx-auto">Comece hoje a produzir com mais segurança e consulte as fichas sempre que surgir uma dúvida.</p>
-    <div class="my-7"></div>
-    <a href="#oferta" class="inline-block bg-[#39B574] hover:bg-[#2fa066] transition-colors text-white font-semibold rounded-[3px] px-8 py-4 text-lg md:text-xl shadow-lg shadow-[#39B574]/30 animate-breathe">QUERO TER ACESSO ÀS FICHAS</a>
+    <div class="mx-auto my-6 h-1 w-16 rounded-full bg-gold"></div>
+    <a href="#oferta" class="inline-block bg-green hover:bg-green-hover transition-colors text-white font-bold rounded-lg px-8 py-4 text-lg md:text-xl shadow-lg shadow-green/40 animate-breathe">QUERO TER ACESSO ÀS FICHAS</a>
   </section>
 
   <!-- ===== SEÇÃO 6 — PARA QUEM É O PRODUTO ===== -->
   <section class="bg-cream2 py-12 md:py-20 px-4">
-    <h2 class="text-center text-graphite font-extrabold uppercase text-3xl md:text-6xl max-w-4xl mx-auto leading-tight">ESTE MATERIAL É IDEAL PARA VOCÊ QUE DESEJA</h2>
+    <h2 class="text-center text-navy font-extrabold uppercase text-3xl md:text-6xl max-w-4xl mx-auto leading-tight">ESTE MATERIAL É IDEAL PARA VOCÊ QUE DESEJA</h2>
     <div class="grid md:grid-cols-3 gap-5 max-w-6xl mx-auto mt-12" id="ideal-grid"></div>
   </section>
 
   <!-- ===== SEÇÃO 7 — TUDO O QUE VOCÊ VAI RECEBER (+ BÔNUS + DEPOIMENTOS) ===== -->
   <section class="relative bg-white py-12 md:py-20 px-4 overflow-hidden">
-    <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(at center top, rgba(232,93,117,0.12), transparent 60%);"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(at center top, rgba(8,123,120,0.10), transparent 60%);"></div>
     <div class="relative max-w-5xl mx-auto">
-      <h2 class="text-center text-graphite font-extrabold text-3xl md:text-6xl leading-tight">TUDO O QUE VOCÊ VAI RECEBER</h2>
-      <p class="text-center text-graphite/70 text-base md:text-xl mt-4 max-w-2xl mx-auto">Mais de 100 fichas visuais organizadas para acompanhar todas as etapas da produção de adesivos.</p>
+      <h2 class="text-center text-navy font-extrabold text-3xl md:text-6xl leading-tight">TUDO O QUE VOCÊ VAI RECEBER</h2>
+      <p class="text-center text-ink/70 text-base md:text-xl mt-4 max-w-2xl mx-auto">Mais de 100 fichas visuais organizadas para acompanhar todas as etapas da produção de adesivos.</p>
 
-      <div class="bg-graphite rounded-[20px] p-5 mt-10">
-        <div class="flex justify-center"><span class="bg-[#39B574] text-white text-xs font-semibold px-3 py-1.5 rounded-full -mt-8">⚡ ACESSO IMEDIATO</span></div>
+      <div class="bg-navy rounded-[20px] p-5 mt-10 border border-gold/30">
+        <div class="flex justify-center"><span class="bg-gold text-navy text-xs font-bold px-3 py-1.5 rounded-full -mt-8">⚡ ACESSO IMEDIATO</span></div>
         <h3 class="text-white text-center font-extrabold text-2xl md:text-4xl mt-4 leading-tight">TUDO O QUE VOCÊ VAI RECEBER DENTRO DO +100 FICHAS PARA PRODUZIR ADESIVOS SEM ERRO</h3>
-        <a href="https://ibb.co/VcjqRcFT" target="_blank" rel="noopener noreferrer" class="block my-6">
-          <img src="https://i.ibb.co/S4s3b4kB/mck.png" alt="mockup do produto" class="w-full h-auto rounded-[12px] shadow-[0_20px_50px_rgba(44,42,46,0.12)]" />
+        <a href="https://referenciassdeadesivos.vercel.app/assets/images/mck.webp" target="_blank" rel="noopener noreferrer" class="block my-6">
+          <img src="https://referenciassdeadesivos.vercel.app/assets/images/mck.webp" alt="mockup do produto" class="w-full h-auto rounded-[12px] shadow-[0_20px_50px_rgba(3,28,49,0.35)]">
         </a>
         <ul class="space-y-3 max-w-2xl mx-auto" id="deliver-list"></ul>
       </div>
 
-      <p class="text-center text-graphite/70 text-base md:text-lg mt-6 max-w-2xl mx-auto">Informações apresentadas de forma visual, direta e fácil de consultar, sem explicações longas ou complicadas.</p>
+      <p class="text-center text-ink/70 text-base md:text-lg mt-6 max-w-2xl mx-auto">Informações apresentadas de forma visual, direta e fácil de consultar, sem explicações longas ou complicadas.</p>
 
       <!-- BÔNUS -->
       <div class="text-center mt-16">
-        <h3 class="text-graphite font-extrabold text-3xl md:text-5xl">E NÃO PARA POR AÍ... TEM MAIS!</h3>
-        <p class="text-graphite/80 text-lg md:text-2xl font-semibold mt-3 max-w-2xl mx-auto">No Pacote Premium, você também recebe materiais complementares para facilitar ainda mais sua produção.</p>
-        <span class="inline-block bg-rose text-white font-bold text-xl md:text-2xl px-6 py-2 rounded-full mt-4">🎁 7 BÔNUS DO PACOTE PREMIUM</span>
+        <h3 class="text-navy font-extrabold text-3xl md:text-5xl">E NÃO PARA POR AÍ... TEM MAIS!</h3>
+        <p class="text-ink/80 text-lg md:text-2xl font-semibold mt-3 max-w-2xl mx-auto">No Pacote Premium, você também recebe materiais complementares para facilitar ainda mais sua produção.</p>
+        <span class="inline-block bg-gold text-navy font-bold text-xl md:text-2xl px-6 py-2 rounded-full mt-4">🎁 5 BÔNUS DO PACOTE PREMIUM</span>
       </div>
       <div class="grid md:grid-cols-2 gap-6 mt-10" id="bonus-grid"></div>
 
       <!-- DEPOIMENTOS -->
       <div class="text-center mt-16">
-        <h3 class="text-graphite font-extrabold text-3xl md:text-5xl">VEJA O QUE AS CLIENTES ESTÃO DIZENDO</h3>
-        <div class="w-[13%] mx-auto h-1 bg-rose rounded-full my-6"></div>
-        <p class="text-graphite/70 text-base md:text-lg max-w-2xl mx-auto">Quem consulta a informação certa produz com mais segurança e desperdiça menos.</p>
+        <h3 class="text-navy font-extrabold text-3xl md:text-5xl">VEJA O QUE AS CLIENTES ESTÃO DIZENDO</h3>
+        <div class="w-[13%] mx-auto h-1 bg-gold rounded-full my-6"></div>
+        <p class="text-ink/70 text-base md:text-lg max-w-2xl mx-auto">Quem consulta a informação certa produz com mais segurança e desperdiça menos.</p>
       </div>
       <div class="grid sm:grid-cols-2 gap-6 mt-8" id="testimonials-grid"></div>
     </div>
@@ -187,106 +189,101 @@
   <!-- ===== SEÇÃO 10 — COMPARAÇÃO DOS PACOTES ===== -->
   <section id="oferta" class="bg-cream2 py-12 md:py-20 px-4">
     <div class="text-center max-w-5xl mx-auto">
-      <span class="block w-fit mx-auto bg-rose text-white text-base md:text-xl px-5 py-2 rounded-full font-bold">ESCOLHA A MELHOR OPÇÃO PARA VOCÊ</span>
-      <h2 class="text-graphite font-extrabold text-2xl md:text-4xl mt-6 leading-tight max-w-3xl mx-auto">Comece com as fichas essenciais ou leve o material completo com todos os bônus.</h2>
-      <div class="w-[13%] mx-auto h-1 bg-rose rounded-full my-6"></div>
+      <span class="block w-fit mx-auto bg-navy text-white text-base md:text-xl px-5 py-2 rounded-full font-bold">ESCOLHA A MELHOR OPÇÃO PARA VOCÊ</span>
+      <h2 class="text-navy font-extrabold text-2xl md:text-4xl mt-6 leading-tight max-w-3xl mx-auto">Comece com as fichas essenciais ou leve o material completo com todos os bônus.</h2>
+      <div class="w-[13%] mx-auto h-1 bg-gold rounded-full my-6"></div>
     </div>
     <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto items-start">
 
       <!-- PACOTE BÁSICO -->
-      <div class="bg-blush rounded-[15px] p-5 flex flex-col">
-        <h3 class="text-graphite text-center font-extrabold text-3xl md:text-4xl">Pacote Básico</h3>
+      <div class="bg-white rounded-[15px] p-5 flex flex-col border border-navy/40 shadow-[0_12px_30px_rgba(6,43,74,0.08)]">
+        <h3 class="text-navy text-center font-extrabold text-3xl md:text-4xl">Pacote Básico</h3>
         <!-- IMAGEM: Mockup Pacote Básico -->
         <div class="ph-slot w-full aspect-square mx-auto my-5"
              data-label="MOCKUP DO PACOTE BÁSICO — capa das +100 fichas (versão simples)."
              data-ratio="Proporção quadrada ~800×800"></div>
-        <p class="text-base mb-2 font-medium text-graphite">Você recebe:</p>
+        <p class="text-base mb-2 font-medium text-navy">Você recebe:</p>
         <ul class="space-y-2 mb-5" id="basico-list"></ul>
-        <p class="text-[#39B574] font-bold text-6xl md:text-7xl my-2 text-center">R$17<span class="text-3xl md:text-4xl align-top">,00</span></p>
-        <p class="text-gray-600 text-sm mb-4 text-center">à vista, ou parcele no cartão</p>
-        <a href="[INSERIR LINK DO CHECKOUT BÁSICO]" class="bg-[#39B574] hover:bg-[#2fa066] text-white font-bold text-center rounded-[3px] py-4 transition-colors animate-breathe">QUERO O PACOTE BÁSICO</a>
-        <div class="bg-blush border border-rose/40 rounded-[10px] p-5 mt-5 text-center">
-          <p class="text-black text-sm font-medium">A maioria das pessoas escolhe a opção abaixo:</p>
-          <div class="flex justify-center mt-3"><div class="w-10 h-10 rounded-full bg-[#39B574] flex items-center justify-center text-white text-2xl">↓</div></div>
+        <p class="text-navy font-bold text-6xl md:text-7xl my-2 text-center">R$17<span class="text-3xl md:text-4xl align-top">,00</span></p>
+        <p class="text-ink/60 text-sm mb-4 text-center">à vista, ou parcele no cartão</p>
+        <a href="[INSERIR LINK DO CHECKOUT BÁSICO]" class="bg-green hover:bg-green-hover text-white font-bold text-center rounded-lg py-4 transition-colors shadow-lg shadow-green/40 animate-breathe">QUERO O PACOTE BÁSICO</a>
+        <div class="bg-cream border border-gold/40 rounded-[10px] p-5 mt-5 text-center">
+          <p class="text-navy text-sm font-medium">A maioria das pessoas escolhe a opção abaixo:</p>
+          <div class="flex justify-center mt-3"><div class="w-10 h-10 rounded-full bg-green flex items-center justify-center text-white text-2xl">↓</div></div>
         </div>
       </div>
 
       <!-- PACOTE PREMIUM -->
-      <div class="bg-graphite rounded-[15px] p-5 flex flex-col relative">
+      <div class="bg-navy rounded-[15px] p-5 flex flex-col relative border border-gold/60 shadow-[0_16px_40px_rgba(3,28,49,0.35)]">
         <div class="flex flex-wrap justify-center gap-2 -mt-9">
-          <span class="bg-[#F5A623] text-black font-bold text-sm md:text-base px-3 py-1.5 rounded-full">⭐ MAIS VENDIDO</span>
-          <span class="bg-rose text-white font-bold text-sm md:text-base px-3 py-1.5 rounded-full">MELHOR CUSTO-BENEFÍCIO</span>
+          <span class="bg-gold text-navy font-bold text-sm md:text-base px-3 py-1.5 rounded-full">⭐ MAIS VENDIDO</span>
+          <span class="bg-teal text-white font-bold text-sm md:text-base px-3 py-1.5 rounded-full">MELHOR CUSTO-BENEFÍCIO</span>
         </div>
         <h3 class="text-white text-center font-extrabold text-3xl md:text-4xl mt-4">Pacote Premium</h3>
-        <a href="https://ibb.co/VcjqRcFT" target="_blank" rel="noopener noreferrer" class="block my-5">
-          <img src="https://i.ibb.co/S4s3b4kB/mck.png" alt="mockup do produto premium" class="w-full h-auto rounded-[12px] shadow-[0_20px_50px_rgba(44,42,46,0.12)]" />
+        <a href="https://referenciassdeadesivos.vercel.app/assets/images/mck.webp" target="_blank" rel="noopener noreferrer" class="block my-5">
+          <img src="https://referenciassdeadesivos.vercel.app/assets/images/mck.webp" alt="mockup do produto premium" class="w-full h-auto rounded-[12px] shadow-[0_20px_50px_rgba(3,28,49,0.4)]">
         </a>
-        <p class="text-[#07CA2A] font-semibold text-lg mb-3 text-center">POR APENAS R$10 A MAIS, LEVE TODOS OS BÔNUS</p>
+        <p class="text-gold font-semibold text-lg mb-3 text-center">POR APENAS R$10 A MAIS, LEVE TODOS OS BÔNUS</p>
         <ul class="space-y-2 mb-5" id="premium-list"></ul>
-        <p class="text-[#39B574] font-bold text-6xl md:text-7xl my-2 text-center">R$27<span class="text-3xl md:text-4xl align-top">,00</span></p>
-        <p class="text-gray-300 text-sm mb-4 text-center">à vista, ou parcele no cartão</p>
-        <a href="[INSERIR LINK DO CHECKOUT PREMIUM]" class="bg-[#39B574] hover:bg-[#2fa066] text-white font-bold text-center rounded-[3px] py-4 transition-colors text-lg animate-breathe">QUERO O PACOTE PREMIUM</a>
+        <p class="text-white font-bold text-6xl md:text-7xl my-2 text-center">R$27<span class="text-3xl md:text-4xl align-top">,00</span></p>
+        <p class="text-white/60 text-sm mb-4 text-center">à vista, ou parcele no cartão</p>
+        <a href="[INSERIR LINK DO CHECKOUT PREMIUM]" class="bg-green hover:bg-green-hover text-white font-bold text-center rounded-lg py-4 transition-colors text-lg shadow-lg shadow-green/40 animate-breathe">QUERO O PACOTE PREMIUM</a>
       </div>
 
     </div>
   </section>
 
   <!-- ===== SEÇÃO 11 — GARANTIA ===== -->
-  <section class="bg-cream2 py-[5vw] px-[5vw]">
+  <section class="bg-cream py-[5vw] px-[5vw]">
     <div class="grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
       <div>
-        <img
-          src="https://silhouette.portallpratico.com.br/__l5e/assets-v1/733038ba-2c1c-4aa7-b36a-c851c71f4719/garantia-15-dias.webp"
-          alt="Selo de garantia 15 dias"
-          class="w-[86%] aspect-square object-contain mx-auto rounded-[12px] shadow-[0_20px_50px_rgba(44,42,46,0.08)]"
-        />
+        <img src="https://referenciassdeadesivos.vercel.app/assets/images/garantia-15-dias.webp" alt="Selo de garantia 15 dias" class="w-[86%] aspect-square object-contain mx-auto rounded-[12px]">
       </div>
       <div>
-        <h2 class="text-graphite font-extrabold text-2xl md:text-4xl leading-tight uppercase">VOCÊ TEM 15 DIAS DE GARANTIA PARA TESTAR AS FICHAS</h2>
-        <p class="text-graphite/70 text-base md:text-lg mt-4">Acesse o material, conheça as fichas e veja como elas podem facilitar sua produção.</p>
-        <p class="text-graphite/70 text-base md:text-lg mt-3">Se, por qualquer motivo, você não ficar satisfeita, basta solicitar o reembolso dentro do prazo de 15 dias.</p>
-        <p class="text-graphite/70 text-base md:text-lg mt-3">Você receberá 100% do valor pago, conforme as condições apresentadas nos termos da oferta.</p>
+        <h2 class="text-navy font-extrabold text-2xl md:text-4xl leading-tight uppercase">VOCÊ TEM 15 DIAS DE GARANTIA PARA TESTAR AS FICHAS</h2>
+        <p class="text-ink/70 text-base md:text-lg mt-4">Acesse o material, conheça as fichas e veja como elas podem facilitar sua produção.</p>
+        <p class="text-ink/70 text-base md:text-lg mt-3">Se, por qualquer motivo, você não ficar satisfeita, basta solicitar o reembolso dentro do prazo de 15 dias.</p>
+        <p class="text-ink/70 text-base md:text-lg mt-3">Você receberá 100% do valor pago, conforme as condições apresentadas nos termos da oferta.</p>
         <ul class="mt-6 grid grid-cols-2 gap-3" id="garantia-destaques"></ul>
-        <p class="text-graphite font-semibold text-lg mt-6">Você produz com mais segurança e ainda conta com uma garantia para conhecer o material.</p>
+        <p class="text-navy font-semibold text-lg mt-6">Você produz com mais segurança e ainda conta com uma garantia para conhecer o material.</p>
       </div>
     </div>
   </section>
 
   <!-- ===== SEÇÃO 12 — PERGUNTAS FREQUENTES ===== -->
   <section class="bg-white py-20 md:py-24 px-6">
-    <h2 class="text-center text-graphite font-extrabold text-3xl md:text-5xl leading-tight mb-10">Perguntas Frequentes</h2>
+    <h2 class="text-center text-navy font-extrabold text-3xl md:text-5xl leading-tight mb-10">Perguntas Frequentes</h2>
     <div class="max-w-3xl mx-auto space-y-3" id="faq"></div>
     <div class="text-center mt-10">
-      <a href="#oferta" class="inline-block bg-[#39B574] hover:bg-[#2fa066] transition-colors text-white font-semibold rounded-[3px] px-8 py-4 text-lg md:text-xl shadow-lg shadow-[#39B574]/30 animate-breathe">QUERO TER ACESSO ÀS FICHAS</a>
+      <a href="#oferta" class="inline-block bg-green hover:bg-green-hover transition-colors text-white font-bold rounded-lg px-8 py-4 text-lg md:text-xl shadow-lg shadow-green/40 animate-breathe">QUERO TER ACESSO ÀS FICHAS</a>
     </div>
   </section>
 
-  <footer class="bg-graphite py-8 px-4 text-center">
-    <p class="text-white text-sm">Copyright © 2026 | Todos os direitos reservados.</p>
-    <p class="text-[#888888] text-xs mt-3 max-w-3xl mx-auto leading-relaxed">Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada. Todos os resultados mencionados são individuais e não garantem os mesmos resultados para todos. Este produto é digital e o acesso é liberado após confirmação do pagamento.</p>
+  <footer class="bg-navy-dark py-8 px-4 text-center">
+    <p class="text-cream text-sm">Copyright © 2026 | Todos os direitos reservados.</p>
+    <p class="text-white/50 text-xs mt-3 max-w-3xl mx-auto leading-relaxed">Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada. Todos os resultados mencionados são individuais e não garantem os mesmos resultados para todos. Este produto é digital e o acesso é liberado após confirmação do pagamento.</p>
   </footer>
 
 </main>
 
 <script>
   // ---- Ícones ----
-  var check = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><circle cx="12" cy="12" r="11" fill="#19E713"></circle><path d="M7 12.5l3.5 3.5L17 9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>';
-  var xmark = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><circle cx="12" cy="12" r="11" fill="#D32B2B"></circle><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"></path></svg>';
-  var idealCheck = '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" class="mb-3"><circle cx="12" cy="12" r="11" fill="#19E713"></circle><path d="M7 12.5l3.5 3.5L17 9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>';
+  var check = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><circle cx="12" cy="12" r="11" fill="#25B967"></circle><path d="M7 12.5l3.5 3.5L17 9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>';
+  var xmark = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><circle cx="12" cy="12" r="11" fill="#D94C4C"></circle><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"></path></svg>';
+  var idealCheck = '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" class="mb-3"><circle cx="12" cy="12" r="11" fill="#087B78"></circle><path d="M7 12.5l3.5 3.5L17 9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>';
   var picIcon = '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="mx-auto opacity-60"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5L5 20"/></svg>';
 
-  // ---- Placeholders de imagem ----
+  // ---- Placeholders de imagem (apenas onde ainda não há imagem) ----
   document.querySelectorAll('.ph-slot').forEach(function(el){
-    if (el.dataset.replace === 'false') return;
     var dark = el.dataset.dark === '1';
     var base = 'flex items-center justify-center text-center rounded-xl border-2 border-dashed p-4 ';
-    base += dark ? 'bg-white/5 border-white/40 text-white' : 'bg-blush border-graphite/25 text-graphite';
+    base += dark ? 'bg-white/5 border-white/40 text-white' : 'bg-cream2 border-navy/25 text-navy';
     el.className += ' ' + base;
     el.innerHTML =
       '<div class="max-w-[92%]">' + picIcon +
       '<p class="font-bold text-xs md:text-sm mt-2 tracking-wide">IMAGEM A INSERIR</p>' +
-      '<p class="text-[11px] md:text-xs mt-1 leading-snug '+(dark?'text-white/80':'text-graphite/75')+'">'+ el.dataset.label +'</p>' +
-      '<p class="text-[10px] mt-1 '+(dark?'text-white/50':'text-graphite/50')+'">'+ el.dataset.ratio +'</p>' +
+      '<p class="text-[11px] md:text-xs mt-1 leading-snug '+(dark?'text-white/80':'text-navy/75')+'">'+ el.dataset.label +'</p>' +
+      '<p class="text-[10px] mt-1 '+(dark?'text-white/50':'text-navy/50')+'">'+ el.dataset.ratio +'</p>' +
       '</div>';
   });
 
@@ -294,47 +291,21 @@
   (function(){
     var items = ["+100 fichas visuais","Consulta rápida e prática","Acesso imediato","Material em PDF","Acesso pelo celular, tablet ou computador"];
     document.getElementById('hero-benefits').innerHTML = items.map(function(t){
-      return '<li class="flex gap-2 text-graphite text-[13px] md:text-base font-medium">'+check+'<span>'+t+'</span></li>';
+      return '<li class="flex gap-2 text-ink text-[13px] md:text-base font-medium">'+check+'<span>'+t+'</span></li>';
     }).join('');
   })();
 
-  // ---- Carrossel de fichas (imagens reais) ----
+  // ---- Carrossel de fichas (imagens reais m1..m20) ----
   (function(){
-    var items = [
-      { href: 'https://ibb.co/1tYRMhdD', src: 'https://i.ibb.co/jP93zBWc/m20.png', alt: 'm20' },
-      { href: 'https://ibb.co/pvNjZ2pK', src: 'https://i.ibb.co/DDmfk4nM/m19.png', alt: 'm19' },
-      { href: 'https://ibb.co/wZPp5FNJ', src: 'https://i.ibb.co/p6M4YBvW/m18.png', alt: 'm18' },
-      { href: 'https://ibb.co/yDZKWsg', src: 'https://i.ibb.co/PRPJwC1/m17.png', alt: 'm17' },
-      { href: 'https://ibb.co/F4Y5b2ys', src: 'https://i.ibb.co/zV2XhpB8/m16.png', alt: 'm16' },
-      { href: 'https://ibb.co/fdMWP163', src: 'https://i.ibb.co/XxXPv20n/m15.png', alt: 'm15' },
-      { href: 'https://ibb.co/RTCjDp2S', src: 'https://i.ibb.co/chNYrcJv/m14.png', alt: 'm14' },
-      { href: 'https://ibb.co/PZdPGq1W', src: 'https://i.ibb.co/kgtw2NqD/m13.png', alt: 'm13' },
-      { href: 'https://ibb.co/JwL5Zhrx', src: 'https://i.ibb.co/mVs6pxhv/m12.png', alt: 'm12' },
-      { href: 'https://ibb.co/Hp3Dk4N3', src: 'https://i.ibb.co/DgTDSWGT/m11.png', alt: 'm11' },
-      { href: 'https://ibb.co/Nd5Phxrk', src: 'https://i.ibb.co/KpdkZ6DQ/m10.png', alt: 'm10' },
-      { href: 'https://ibb.co/NvFbd2D', src: 'https://i.ibb.co/J1cgwj6/m9.png', alt: 'm9' },
-      { href: 'https://ibb.co/4Rm5jT7p', src: 'https://i.ibb.co/RTvVC09c/m8.png', alt: 'm8' },
-      { href: 'https://ibb.co/cK4DcBR9', src: 'https://i.ibb.co/PsqwZLJy/m7.png', alt: 'm7' },
-      { href: 'https://ibb.co/mCwTft0G', src: 'https://i.ibb.co/1f5QFKML/m6.png', alt: 'm6' },
-      { href: 'https://ibb.co/67zQ1rrS', src: 'https://i.ibb.co/jPmtWbbY/m5.png', alt: 'm5' },
-      { href: 'https://ibb.co/zhxBmTKK', src: 'https://i.ibb.co/nsmYwNhh/m4.png', alt: 'm4' },
-      { href: 'https://ibb.co/Lh6sJLzh', src: 'https://i.ibb.co/JF2SyfRF/m3.png', alt: 'm3' },
-      { href: 'https://ibb.co/Wv9pDdpK', src: 'https://i.ibb.co/8g34zR48/m2.png', alt: 'm2' },
-      { href: 'https://ibb.co/QvWc0spv', src: 'https://i.ibb.co/b543tpQ5/m1.png', alt: 'm1' }
-    ];
-
-    function card(item){
-      return '<div class="h-[265px] md:h-[385px] w-[188px] md:w-[272px] flex-none mx-2 rounded-[10px] overflow-hidden bg-white shadow-lg inline-block border border-white/10">'+
-        '<img src="'+item.src+'" alt="'+item.alt+'" class="w-full h-full object-cover block" loading="lazy" />'+
+    var items = [];
+    for (var n=20; n>=1; n--){ items.push('https://referenciassdeadesivos.vercel.app/assets/images/m'+n+'.webp'); }
+    function card(src){
+      return '<div class="h-[265px] md:h-[385px] w-[188px] md:w-[272px] flex-none mx-2 rounded-[10px] overflow-hidden bg-white shadow-lg inline-block border border-gold/20">'+
+        '<img src="'+src+'" alt="ficha" class="w-full h-full object-cover block" loading="lazy" />'+
         '</div>';
     }
-
     var html = '';
-    for (var r=0; r<2; r++){
-      for (var i=0; i<items.length; i++){
-        html += card(items[i]);
-      }
-    }
+    for (var r=0; r<2; r++){ for (var i=0; i<items.length; i++){ html += card(items[i]); } }
     document.getElementById('carousel-track').innerHTML = html;
   })();
 
@@ -350,7 +321,7 @@
       "Você desperdiça papel, vinil e tinta fazendo inúmeros testes."
     ];
     document.getElementById('problem-list').innerHTML = items.map(function(t){
-      return '<li class="flex gap-3 text-graphite text-base md:text-lg">'+xmark+'<span>'+t+'</span></li>';
+      return '<li class="flex gap-3 text-ink text-base md:text-lg">'+xmark+'<span>'+t+'</span></li>';
     }).join('');
   })();
 
@@ -372,7 +343,7 @@
       "Melhor acabamento e maior durabilidade.",
       "Produção mais rápida e organizada."
     ];
-    function row(icon, t){ return '<li class="flex items-start gap-3 py-3 border-b border-graphite/15 last:border-0 text-graphite text-base md:text-lg">'+icon+'<span>'+t+'</span></li>'; }
+    function row(icon, t){ return '<li class="flex items-start gap-3 py-3 border-b border-ink/12 last:border-0 text-ink text-base md:text-lg">'+icon+'<span>'+t+'</span></li>'; }
     document.getElementById('antes-list').innerHTML = antes.map(function(t){return row(xmark,t);}).join('');
     document.getElementById('depois-list').innerHTML = depois.map(function(t){return row(check,t);}).join('');
   })();
@@ -388,10 +359,10 @@
       {t:"CONSULTAR AS INFORMAÇÕES A QUALQUER MOMENTO", d:"Abra as fichas pelo celular, tablet ou computador sempre que precisar."}
     ];
     document.getElementById('ideal-grid').innerHTML = cards.map(function(c){
-      return '<div class="bg-white border border-blush rounded-[12px] p-6 flex flex-col items-center text-center justify-start min-h-[180px]">'+
+      return '<div class="bg-white border border-cream2 rounded-[12px] p-6 flex flex-col items-center text-center justify-start min-h-[180px] shadow-[0_10px_25px_rgba(6,43,74,0.06)]">'+
         idealCheck+
-        '<h3 class="font-bold uppercase text-[15px] text-graphite">'+c.t+'</h3>'+
-        '<p class="text-graphite/70 text-sm mt-2">'+c.d+'</p></div>';
+        '<h3 class="font-bold uppercase text-[15px] text-navy">'+c.t+'</h3>'+
+        '<p class="text-ink/70 text-sm mt-2">'+c.d+'</p></div>';
     }).join('');
   })();
 
@@ -410,40 +381,31 @@
       "Checklist completo de produção."
     ];
     document.getElementById('deliver-list').innerHTML = items.map(function(t){
-      return '<li class="flex gap-3 text-white pb-3 border-b border-graphite-soft last:border-0">'+check+'<span>'+t+'</span></li>';
+      return '<li class="flex gap-3 text-white pb-3 border-b border-white/15 last:border-0">'+check+'<span>'+t+'</span></li>';
     }).join('');
   })();
 
-  // ---- Bônus (Premium) ----
+  // ---- Bônus (Premium) — imagens reais m1..m5 ----
   (function(){
     var bonuses = [
-      {n:1, t:"Guia de Print & Cut Sem Erro", d:"Aprenda a imprimir e cortar o contorno com mais precisão, evitando cortes deslocados e marcas de registro mal reconhecidas.", image:'https://i.ibb.co/7Jf8htDh/315b4523-4a1a-49a4-bc0f-0d5ce39729c0.png', link:'https://ibb.co/hR6h0FN0'},
-      {n:2, t:"Guia do Meio Corte Perfeito", d:"Entenda como cortar somente a camada do adesivo, preservando o liner e facilitando o destaque.", image:'https://i.ibb.co/RG33TLdM/d1f73a7d-8003-480d-9bf3-fb778181b88b.png', link:'https://ibb.co/0pCCyPvW'},
-      {n:3, t:"Guia de Laminação e Proteção", d:"Descubra como proteger seus adesivos contra riscos, umidade, desbotamento e desgaste.", image:'https://i.ibb.co/ycpTSWwc/5d3a108d-7fd7-46e4-b64a-9768bfc07789.png', link:'https://ibb.co/pBQDyJtB'},
-      {n:4, t:"Diagnóstico Rápido de Falhas", d:"Identifique rapidamente as possíveis causas de impressão borrada, baixa aderência, bolhas, rugas e cortes incorretos.", image:'https://i.ibb.co/LXFd9mmb/80445b17-e3b4-4315-8c57-4668018f1f82.png', link:'https://ibb.co/5g0hsmmt'},
-      {n:5, t:"Checklist de Produção Profissional", d:"Revise arquivo, impressão, secagem, corte, acabamento e embalagem antes de produzir em quantidade.", image:'https://i.ibb.co/rBkQv3W/26a542e0-697c-4352-a7dc-7bd0f7a00518.png', link:'https://ibb.co/BhLfwG1'}
+      {n:1, t:"Guia de Print & Cut Sem Erro", d:"Aprenda a imprimir e cortar o contorno com mais precisão, evitando cortes deslocados e marcas de registro mal reconhecidas.", image:'https://referenciassdeadesivos.vercel.app/assets/images/m1.webp'},
+      {n:2, t:"Guia do Meio Corte Perfeito", d:"Entenda como cortar somente a camada do adesivo, preservando o liner e facilitando o destaque.", image:'https://referenciassdeadesivos.vercel.app/assets/images/m2.webp'},
+      {n:3, t:"Guia de Laminação e Proteção", d:"Descubra como proteger seus adesivos contra riscos, umidade, desbotamento e desgaste.", image:'https://referenciassdeadesivos.vercel.app/assets/images/m3.webp'},
+      {n:4, t:"Diagnóstico Rápido de Falhas", d:"Identifique rapidamente as possíveis causas de impressão borrada, baixa aderência, bolhas, rugas e cortes incorretos.", image:'https://referenciassdeadesivos.vercel.app/assets/images/m4.webp'},
+      {n:5, t:"Checklist de Produção Profissional", d:"Revise arquivo, impressão, secagem, corte, acabamento e embalagem antes de produzir em quantidade.", image:'https://referenciassdeadesivos.vercel.app/assets/images/m5.webp'}
     ];
     document.getElementById('bonus-grid').innerHTML = bonuses.map(function(b){
-      var imageContent = b.image ?
-        '<div class="block w-full h-full">'+
-          '<img src="'+b.image+'" alt="'+b.t+'" class="block w-full h-full object-cover" />'+
-        '</div>' :
-        '<div class="max-w-[90%]">'+picIcon+
-          '<p class="font-bold text-xs mt-2">IMAGEM DO BÔNUS #'+b.n+'</p>'+
-          '<p class="text-[11px] mt-1 text-graphite/70 leading-snug">'+b.t+'</p>'+
-          '<p class="text-[10px] mt-1 text-graphite/45">Proporção quadrada ~800×800</p></div>';
-
-      return '<div class="bg-blush rounded-[15px] overflow-hidden relative">'+
+      return '<div class="bg-white rounded-[15px] overflow-hidden relative border border-cream2 shadow-[0_10px_25px_rgba(6,43,74,0.06)]">'+
         '<div class="relative bg-white">'+
-          '<div class="w-full aspect-square flex items-center justify-center text-center bg-blush border-b-2 border-dashed border-graphite/20 text-graphite p-0">'+
-            imageContent+
+          '<div class="w-full aspect-square flex items-center justify-center text-center bg-cream2 border-b border-cream2 text-navy p-0">'+
+            '<div class="block w-full h-full"><img src="'+b.image+'" alt="'+b.t+'" class="block w-full h-full object-cover" /></div>'+
           '</div>'+
-          '<span class="absolute top-3 right-3 bg-[#F5A623] text-black font-semibold text-sm px-3 py-1 rounded-md">BÔNUS #'+b.n+'</span>'+
+          '<span class="absolute top-3 right-3 bg-gold text-navy font-bold text-sm px-3 py-1 rounded-md">BÔNUS #'+b.n+'</span>'+
         '</div>'+
         '<div class="px-5 pb-5 pt-4 text-center">'+
-          '<h4 class="font-bold text-lg text-graphite">'+b.t+'</h4>'+
-          '<p class="text-graphite/70 text-sm mt-2">'+b.d+'</p>'+
-          '<div class="mt-4 inline-block bg-rose text-white text-xs font-bold px-3 py-1.5 rounded-full">INCLUSO NO PACOTE PREMIUM</div>'+
+          '<h4 class="font-bold text-lg text-navy">'+b.t+'</h4>'+
+          '<p class="text-ink/70 text-sm mt-2">'+b.d+'</p>'+
+          '<div class="mt-4 inline-block bg-navy text-white text-xs font-bold px-3 py-1.5 rounded-full">INCLUSO NO PACOTE PREMIUM</div>'+
         '</div></div>';
     }).join('');
   })();
@@ -453,12 +415,12 @@
     var grid = document.getElementById('testimonials-grid');
     var html = '';
     for (var i=1;i<=4;i++){
-      html += '<div class="bg-blush rounded-[15px] overflow-hidden p-3">'+
-        '<div class="w-full aspect-[7/10] rounded-[10px] flex items-center justify-center text-center bg-white border-2 border-dashed border-graphite/20 text-graphite p-4">'+
+      html += '<div class="bg-white rounded-[15px] overflow-hidden p-3 border border-cream2">'+
+        '<div class="w-full aspect-[7/10] rounded-[10px] flex items-center justify-center text-center bg-cream2 border-2 border-dashed border-navy/20 text-navy p-4">'+
         '<div class="max-w-[90%]">'+picIcon+
         '<p class="font-bold text-sm mt-2">DEPOIMENTO REAL '+i+'</p>'+
-        '<p class="text-xs mt-1 text-graphite/70 leading-snug">Inserir print/foto de depoimento real de cliente (a ser enviado). Não usar nomes, fotos ou resultados inventados.</p>'+
-        '<p class="text-[10px] mt-2 text-graphite/45">Proporção 700×1000</p></div></div></div>';
+        '<p class="text-xs mt-1 text-ink/70 leading-snug">Inserir print/foto de depoimento real de cliente (a ser enviado). Não usar nomes, fotos ou resultados inventados.</p>'+
+        '<p class="text-[10px] mt-2 text-navy/45">Proporção 700×1000</p></div></div></div>';
     }
     grid.innerHTML = html;
   })();
@@ -475,7 +437,7 @@
       "Acesso vitalício."
     ];
     document.getElementById('basico-list').innerHTML = items.map(function(t){
-      return '<li class="flex gap-2 text-graphite">'+check+'<span>'+t+'</span></li>';
+      return '<li class="flex gap-2 text-ink">'+check+'<span>'+t+'</span></li>';
     }).join('');
   })();
 
@@ -502,7 +464,7 @@
   (function(){
     var items = ["15 dias de garantia","Compra protegida","Acesso imediato","Risco reduzido para a cliente"];
     document.getElementById('garantia-destaques').innerHTML = items.map(function(t){
-      return '<li class="flex gap-2 items-center text-graphite text-sm md:text-base font-medium bg-white border border-blush rounded-lg px-3 py-2">'+check+'<span>'+t+'</span></li>';
+      return '<li class="flex gap-2 items-center text-ink text-sm md:text-base font-medium bg-white border border-cream2 rounded-lg px-3 py-2">'+check+'<span>'+t+'</span></li>';
     }).join('');
   })();
 
@@ -523,12 +485,12 @@
     var wrap = document.getElementById('faq');
     wrap.innerHTML = faqs.map(function(f,i){
       var open = i===0;
-      return '<div class="faq-item border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">'+
+      return '<div class="faq-item border border-cream2 rounded-xl overflow-hidden bg-white shadow-sm">'+
         '<button class="faq-btn w-full flex items-center justify-between gap-4 p-5 text-left">'+
-          '<span class="font-semibold text-[#0F0F0F] text-base md:text-lg">'+f.q+'</span>'+
-          '<span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-[#EE6352] text-white flex items-center justify-center text-xl font-bold">'+(open?'−':'+')+'</span>'+
+          '<span class="font-semibold text-navy text-base md:text-lg">'+f.q+'</span>'+
+          '<span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-teal text-white flex items-center justify-center text-xl font-bold">'+(open?'−':'+')+'</span>'+
         '</button>'+
-        '<div class="faq-answer px-5 pb-5 text-[#4A4A4A] text-base leading-relaxed" style="display:'+(open?'block':'none')+'">'+f.a+'</div>'+
+        '<div class="faq-answer px-5 pb-5 text-ink/70 text-base leading-relaxed" style="display:'+(open?'block':'none')+'">'+f.a+'</div>'+
       '</div>';
     }).join('');
     wrap.querySelectorAll('.faq-btn').forEach(function(btn){
